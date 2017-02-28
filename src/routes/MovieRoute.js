@@ -1,0 +1,13 @@
+import express from 'express';
+import MovieController from '../controllers/MovieController';
+const router = express.Router();
+
+router.get('/movies', MovieController.list);
+
+router.get('/movies/:_id', MovieController.show);
+
+router.post('/movies', MovieController.create);
+
+router.delete('/movies/:_id', MovieController.remove);
+
+export default router;
