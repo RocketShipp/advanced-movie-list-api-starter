@@ -23,11 +23,11 @@ const movieSchema = new mongoose.Schema({
   },
   voteAverage: {
     required: true,
-    type: String
+    type: Number
   },
   voteCount: {
     required: true,
-    type: String
+    type: Number
   },
   posterPath: {
     required: true,
